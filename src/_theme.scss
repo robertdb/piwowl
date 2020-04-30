@@ -1,0 +1,64 @@
+/* Palette */
+$primary-color: #000000;
+$secondary-color: #fe6b20;
+$common-color: white;
+$info-color: #b2b5b7;
+$footer-bg-main-color: #2f2f2f;
+$footer-bg-cp-color: #242527;
+$footer-cp-text-color: #505052;
+$cto-color: #3abeef;
+$grey-color: #7e7e7e;
+
+/* Typography */
+// fonts
+$font-path: "./assets/montserrat" !default;
+
+$font-bold: Montserrat-Bold;
+$font-extra-bold: Montserrat-ExtraBold;
+$font-regular: Montserrat-Regular;
+
+@font-face {
+  font-family: $font-bold;
+  src: url("#{$font-path}/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: $font-extra-bold;
+  src: url("#{$font-path}/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: $font-regular;
+  src: url("#{$font-path}/Montserrat-Regular.ttf");
+}
+
+// size
+@function getRem($pixels) {
+  $rem: 0.625;
+  $result: $pixels * $rem;
+  @return unquote($result + "rem");
+}
+
+$h1: 30px;
+$h2: 24px;
+$h3: 19px;
+$body-1: 18px;
+$body-2: 16px;
+$body-3: 13px;
+
+// Breakpoints
+$m1920: 1920px;
+$m1600: 1600px;
+$m1440: 1300px;
+$m1200: 1200px;
+$m885: 885px;
+$m768: 767px;
+$m480: 480px;
+
+// spacing
+$spacing: 8px;
+
+// Helper class
+.uppercase {
+  text-transform: uppercase;
+}

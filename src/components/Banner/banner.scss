@@ -1,0 +1,30 @@
+@import "../../theme";
+
+.banner-container {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: $spacing * 5; //40px
+  @media (max-width: $m768) {
+    padding-top: $spacing * 10;
+    width: 100%;
+  }
+  .banner-title {
+    background: linear-gradient(0deg, #fe6920 0, #ff9626);
+    font-family: Montserrat;
+    color: $info-color;
+    font-size: $spacing * 8;
+    line-height: 71.71px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @extend .uppercase;
+    @media (max-width: $m768) {
+      font-size: $spacing * 3; //24px
+      line-height: $spacing * 3; //24px
+    }
+  }
+  .banner-subtitle {
+    margin-top: $spacing;
+    color: $grey-color;
+  }
+}

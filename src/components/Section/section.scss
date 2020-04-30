@@ -1,0 +1,29 @@
+@import "../../theme";
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: $spacing * 3; //24px
+  padding-bottom: $spacing * 3; //24px
+  padding-left: $spacing * 6;
+  padding-right: $spacing * 6;
+  .content-left {
+    flex-basis: 55%;
+    margin-right: $spacing * 5; // 40px
+    @media (max-width: $m885) {
+      flex-basis: 100%;
+      margin-right: 0;
+    }
+  }
+  .content-right {
+    flex-basis: 40%;
+    @media (max-width: $m885) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.reverse-childs {
+  flex-direction: row-reverse;
+}

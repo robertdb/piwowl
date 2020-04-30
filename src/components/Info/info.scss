@@ -1,0 +1,40 @@
+@import "../../theme";
+
+.info-container {
+  //max-width: $spacing * 59.125; //473px
+  padding-top: $spacing * 12;
+  .wrapper {
+    margin-bottom: $spacing * 3; //24px
+
+    .info-title {
+      margin-bottom: $spacing * 2;
+      @extend .uppercase;
+    }
+
+    .description {
+      line-height: 24px;
+      color: $info-color;
+    }
+  }
+
+  .feature-title {
+    @extend .uppercase;
+    line-height: 24px;
+    color: $secondary-color;
+    margin-bottom: $spacing * 2; //16px
+  }
+
+  .feature-list {
+    list-style: none;
+
+    .feature-icon {
+      height: 12px;
+      width: 12px;
+      margin-right: $spacing;
+    }
+
+    .feature-text {
+      line-height: 30px;
+    }
+  }
+}

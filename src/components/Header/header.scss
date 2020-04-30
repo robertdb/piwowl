@@ -1,0 +1,21 @@
+@import "../../theme";
+
+header {
+  top: 0;
+  height: $spacing * 7.5; //60px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: $primary-color;
+  display: flex;
+  img {
+    height: $spacing * 14.75; //118px
+    width: $spacing * 34.125; //273px
+  }
+  nav {
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}

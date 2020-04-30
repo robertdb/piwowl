@@ -1,0 +1,64 @@
+@import "_theme";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: $common-color;
+  background-color: $primary-color;
+}
+
+h1 {
+  font-family: $font-bold;
+  font-size: $h1;
+}
+
+h2 {
+  font-family: $font-bold;
+  font-size: $h2;
+}
+
+h3 {
+  font-family: $font-extra-bold;
+  font-size: $h3;
+}
+
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.body-1 {
+  font-size: $body-1;
+}
+
+.body-2 {
+  font-size: $body-2;
+}
+
+.body-3 {
+  font-size: $body-3;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  background-color: $cto-color;
+  color: $common-color;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  border-radius: 5px;
+  padding: 5px 12px;
+  border: none;
+  outline: none;
+  @media (max-width: $m480) {
+    font-size: 0.6em;
+  }
+}
